@@ -4,6 +4,7 @@ package positionalListTesterClasses;
 import java.util.Iterator;
 
 import interfaces.Position;
+import llPositionalList.F2LIteratorMaker;
 import llPositionalList.L2FIteratorMaker;
 import llPositionalList.LinkedPositionalList;
 import llPositionalList.PLIteratorF2L;
@@ -11,7 +12,7 @@ import llPositionalList.PLIteratorF2L;
 public class LinkedPositionalListTester4 {
 
 	public static void main(String[] args) {
-		LinkedPositionalList<Integer> list1 = new LinkedPositionalList<>(new L2FIteratorMaker<Integer>()); 
+		LinkedPositionalList<Integer> list1 = new LinkedPositionalList<>(new F2LIteratorMaker<Integer>()); 
 
 		Position<Integer> f = list1.addFirst(1); 
 		Position<Integer> l = list1.addLast(10);
